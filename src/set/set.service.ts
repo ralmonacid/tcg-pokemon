@@ -11,9 +11,6 @@ export class SetService {
     @InjectRepository(SetEntity)
     private setEntity:Repository<SetEntity>
   ){}
-  create(createSetDto: CreateSetDto) {
-    return 'This action adds a new set';
-  }
 
   //Listar todos los set
   async findAll() {
