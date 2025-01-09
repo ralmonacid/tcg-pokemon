@@ -8,6 +8,7 @@ export class MarketService {
     return 'This action adds a new market';
   }
 
+  //buscar todas las tiendas
   findAll() {
     return `This action returns all market`;
   }
