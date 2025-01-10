@@ -8,6 +8,9 @@ export class SetController {
   constructor(private readonly setService: SetService) {}
 
   @Post()
+  async create(@Body() createSetDto: CreateSetDto) {
+    return await this.setService.create(createSetDto);
+  }
 
   @Get('list')
   async findAll() {
